@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.body-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('IMG/LibraryBG01.jpg') center/cover no-repeat;
+}
+
+.login-wrapper {
+    width: 100%;
+    max-width: 350px;
+    padding: 25px;
+    border-radius: 12px;
+    background-color: rgba(0, 0, 0, 0.4); 
+    backdrop-filter: blur(12px);
+    border: 2px solid #007bff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    margin-bottom: 6px;
+    color: #fff;
+    font-size: 0.95em;
+}
+
+.form-group input {
+    padding: 7px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.8);
+    transition: outline 0.2s ease;
+}
+
+.form-group input:focus {
+    outline: 2px solid #007bff;
+}
+
+.login-wrapper button {
+    padding: 5px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.login-wrapper button:hover {
+    background-color: #30b300;
+}
+
+.reg-and-forgot p {
+    text-align: left;
+    margin-top: 10px;
+    font-size: 0.8em;
+    color: #fff;
+}
+
+.navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.navigation h2 {
+    color: #fff;
+    font-size: 1.5em;
+}
+
+.navigation ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navigation li {
+    margin: 0;
+}
+
+.navigation a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+    transition: color 0.2s ease;
+}
+
+.navigation a:hover {
+    text-decoration: underline;
+    color: #30b300;
+}
