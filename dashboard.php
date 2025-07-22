@@ -1,6 +1,12 @@
 <?php
+session_start();
+if (!isset($_SESSION['userid'])) {
+    header("Location: login.html");
+    exit();
+}
 include 'conn.php'; 
 
+// echo "Welcome, " . $_SESSION['userid'] . "! Your ID is: " . $_SESSION['userid'];
 
 $page = isset($_GET['page']) ? (int)$_GET['page'] : 1;
 $booksPerPage = 8;
@@ -39,10 +45,12 @@ $totalPages = ceil($totalBooks / $booksPerPage);
                 <button type="button">Search</button>
             </div>
             <ul>
-                <li><a href="dashboard.php">Home</a></li>
+                <li><a href="dashboard.php" class="active">Home</a></li>
                 <li><a href="registeruser.html">Registration Form</a></li>
-                <li><a href="/profile">Profile</a></li>
-                <li><a href="/contact">Contact</a></li>
+                <li><a href="profile.php">Profile</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Log out</a></li>
+
             </ul>
         </div>
         <!-- <div class="book-container">

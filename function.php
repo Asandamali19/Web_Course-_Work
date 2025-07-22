@@ -2,11 +2,11 @@
 function check_login($conn)
 {
 
-	if(isset($_SESSION['user_id']))
+	if(isset($_SESSION['userid']))
 	{
 
-		$id = $_SESSION['user_id'];
-		$query = "select * from users where user_id = '$id' limit 1";
+		$id = $_SESSION['userid'];
+		$query = "select * from users where userid = '$id' limit 1";
 
 		$result = mysqli_query($conn,$query);
 		if($result && mysqli_num_rows($result) > 0)

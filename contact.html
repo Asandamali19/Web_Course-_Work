@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <div class="contact-contaner">
+         <div class="navigation">
+            <h2>BookFriends</h2>
+            <ul>
+                <li><a href="dashboard.php" >Home</a></li>
+                <li><a href="registeruser.html">Registration Form</a></li>
+                <li><a href="profile.php">Profile</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="contact-details">
+            <div class="contact-info">
+            <h3>Contact Us</h3>
+            <p>We'd love to hear from you! Whether it's feedback, a question, or just to say hello.</p>
+            
+            <ul>
+                <li><strong>📍 Address:</strong> 123 Panadura Lane, Colombo, Sri Lanka</li>
+                <li><strong>📞 Phone:</strong> +94 71 125 7854</li>
+                <li><strong>📧 Email:</strong> support@bookfriends.com</li>
+            </ul>
+
+            <div class="socials">
+                <a href="https://www.facebook.com">Facebook</a>
+                <a href="https://www.instagram.com">Instagram</a>
+                <a href="https://x.com/">Twitter</a>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="contact-form">
+            <h3>Send a Message</h3>
+            <form action="sendMessage.php" method="post">
+                <input type="text" name="name" placeholder="Your Name" required />
+                <input type="email" name="email" placeholder="Your Email" required />
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit" name="submit">Send Message</button>
+            </form>
+        </div>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>

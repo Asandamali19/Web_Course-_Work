@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Navigation Bar */
+.navigation {
+    width: 100%;
+    height: 80px;
+    background-color: #5b4636;
+    backdrop-filter: blur(12px);
+    border-bottom: 2px solid #007bff;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}
+
+.navigation h2 {
+    color: #faf3e0;
+}
+
+.navigation ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navigation li {
+    padding: 5px;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #faf3e0;
+    padding: 6px 12px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.navigation a:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.navigation a.active {
+    background-color: #369e3b;
+    color: #000;
+    font-weight: bold;
+}
+
+/* Profile Section */
+.profile-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 100px 20px 40px;
+    background: linear-gradient(180deg, #faf3e0, #ffe9d6);
+    min-height: 100vh;
+}
+.profile-tabel-container{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.profile-card {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 30px 40px;
+    text-align: center;
+    width: 90%;
+    transition: transform 0.3s;
+}
+
+.profile-card:hover {
+    transform: translateY(-5px);
+}
+
+.profile-card h2 {
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+    color: #333;
+}
+
+.profile-card p {
+    font-size: 1rem;
+    color: #555;
+    word-wrap: break-word;
+}
+
+/* User List Section */
+.users-list {
+    width: 90%;
+    margin: 40px auto;
+    padding: 30px 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+}
+
+.users-list h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+#searchUser {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+/* User Table */
+.user-tabel {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    font-size: 0.95rem;
+}
+
+.user-tabel th,
+.user-tabel td {
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+.user-tabel thead {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.user-tabel tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.user-tabel tr:hover {
+    background-color: #f1f1f1;
+}
+
+.user-tabel a {
+    color: #dc3545;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.user-tabel a:hover {
+    text-decoration: underline;
+}
